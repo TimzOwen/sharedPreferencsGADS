@@ -25,3 +25,37 @@ __FileName__ is the file to be accessed only.
 We will need an **editor** to save and retrieve changes made to shared preference
 
 
+``` SharedPreferences.Editor mEditor = mSharedPreferences.edit();
+                mEditor.putString(Name, name);
+                mEditor.putString(Phone,pass);
+                mEditor.putString(Email,email);
+                mEditor.commit();
+```
+From the code above,We created the **sharedPreference.Editor**  by calling the __.editor__ method.
+The added up all the strings using **PutString** and save all teh changes we use __commit__ method.
+
+### screenshot
+
+![Screenshot_20200702-132451](https://user-images.githubusercontent.com/34624703/86349668-2e720100-bc6a-11ea-8238-f7df31bb83c8.png)
+
+### Delete and clear from sharedPreference
+call the method **clear()** to clear and **.remove()** to delete data. make sure to pass in the correct key.
+
+# Picasso Library 
+a powerful library that allows you to load you images into your app with 1 if no 2 lines of code.
+
+```Picasso.get().load("http://i.imgur.com/DvpvklR.png").into(imageView);```
+
+### Image Transfomation 
+```Picasso.get()
+  .load(url)
+  .resize(50, 50)
+  .centerCrop()
+  .into(imageView)
+```
+
+
+
+
+
+
