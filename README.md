@@ -36,7 +36,8 @@ The added up all the strings using **PutString** and save all teh changes we use
 
 ### screenshot
 
-![Screenshot_20200702-132451](https://user-images.githubusercontent.com/34624703/86349668-2e720100-bc6a-11ea-8238-f7df31bb83c8.png)
+![sharedpref](https://user-images.githubusercontent.com/34624703/86350297-223a7380-bc6b-11ea-9791-1dadeb14a9ad.JPG)
+
 
 ### Delete and clear from sharedPreference
 call the method **clear()** to clear and **.remove()** to delete data. make sure to pass in the correct key.
