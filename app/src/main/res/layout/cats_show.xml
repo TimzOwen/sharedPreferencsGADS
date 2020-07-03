@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="8dp">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+        
+        <ImageView
+            android:id="@+id/img_view"
+            android:src="@drawable/ic_launcher_background"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"/>
+        <TextView
+            android:id="@+id/tv_create"
+            android:text="Cat 01"
+            android:textSize="22sp"
+            android:textColor="@android:color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/tvLikes_Dn"
+            android:text="Likes: "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

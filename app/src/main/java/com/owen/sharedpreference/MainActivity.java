@@ -3,6 +3,7 @@ package com.owen.sharedpreference;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
@@ -16,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
     //Declarre the Views being referenced
     private TextView tvDisp;
     private EditText etName;
-    private Button btnSAve;
+    private Button btnSAve , btnJson;
 
     private static final String SHARED_PREF_NAME = "username";
     private static final String KEY_NAME = "key_username";
@@ -29,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
         tvDisp = findViewById(R.id.tvDisplay);
         etName = findViewById(R.id.etName);
         btnSAve = findViewById(R.id.btnSave);
+        btnJson = findViewById(R.id.btnJson);
 
         displayUserName();
 
@@ -37,6 +39,12 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 saveMyName();
+            }
+        });
+        btnJson.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, NetworkActivity.class));
             }
         });
     }
